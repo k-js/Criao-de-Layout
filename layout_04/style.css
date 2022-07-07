@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Rubik:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Gulzar', serif;
+    font-family: 'Rubik', sans-serif
+}
+
+:root {
+    --menu-size: 250px;
+}
+
+.cabecalho{
+    height: 100px;
+    width: 850px;
+    background-color:rgb(107, 107, 192);
+    margin: 0 auto;
+}
+
+.cabecalho h1{
+    padding: 30px;
+    text-align: center;
+    color: #eee;
+}
+
+.menu-principal{
+    background-color: rgb(218, 66, 66);
+    padding: 10px;
+    text-align: center;
+    width: 850px;
+    margin: 0 auto;
+}
+
+.menu-principal h2{
+    padding: 24px;
+    color: #eee;
+}
+
+#btnMenu {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+#btnMenu:hover {
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#btnMenu:active {
+    background-color: red;
+}
+
+#btnClose {
+    padding: 8px;
+    background-color: rgb(78, 37, 37);
+    color: #fff;
+    font-size: 20px;
+}
+
+#btnClose:active {
+    background-color: rgb(151, 73, 73);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: var(--menu-size);
+    height: 100%;
+    background-color:rgb(218, 66, 66);;
+}
+
+.menu ul {
+    list-style: none;
+    margin-top: 120px;
+    margin-left: 50px;
+}
+
+.menu ul li {
+    display: block;
+}
+
+.menu ul li a {
+    transition: background 0.3s;
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    margin-top: 15px;
+}
+
+.menu ul li a:hover {
+    background-color: rgb(139, 145, 179);
+}
+
+.effect {
+    transition: margin 0.4s;
+}
+
+@media (min-width: 768px) {
+    #btnClose {
+        display: none;
+    }
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo h3{
+    padding: 15px;
+    color: red;
+}
+
+.forms{
+    width: 430px;
+    height: 400px;
+    margin: 30px 10px 0 10px;
+    background-color: antiquewhite;
+}
+.formt label{
+   font-size: 17px;
+   margin-right: 300px;
+   padding: 10px;
+   margin-top: 10px;
+}
+
+input{
+   padding: 15px;
+}
+
+
+.span{
+    color: blue;
+}
+
+button{
+    background-color:blue;
+    height: 30px;
+    width: 380px;
+    margin-top: 30px;
+}
+.menu-esquerdo{
+    height: 500px;
+    width: 200px;
+    background-color: rgb(189, 231, 217);
+    float: left;
+    border-right:  dashed red;
+}
+
+.principal{
+    height: 500px;
+    width: 450px;
+    background-color:rgb(189, 231, 217);
+    float: left;
+    text-align: center;
+    border-right:  dashed red;
+}
+
+.menu-direito{
+    height: 500px;
+    width: 200px;
+    background-color: rgb(189, 231, 217);
+    float: left;
+}
+
+.rodape{
+    height: 100px;
+    width: 850px;
+    background-color: rgb(107, 107, 192);;
+    clear: both;
+    margin: 0 auto;
+}
+
+.rodape p{
+    text-align: center;
+    padding: 30px;
+    color: #eee;
+}
+

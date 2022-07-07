@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho{
+    height: 100px;
+    width: 750px;
+    background-color:blue;
+    margin: 0 auto;
+}
+
+.cabecalho h1{
+    padding: 30px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo h2{
+    padding: 18px;
+}
+
+.menu-esquerdo{
+    height: 500px;
+    width: 150px;
+    background-color: red;
+    float: left;
+}
+
+.principal{
+    height: 500px;
+    width: 450px;
+    background-color:aquamarine;
+    float: left;
+    text-align: center;
+}
+
+.menu-direito{
+    height: 500px;
+    width: 150px;
+    background-color: green;
+    float: left;
+}

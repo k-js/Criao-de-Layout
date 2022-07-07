@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Layout 04</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1>TOPO</h1>
+    </div>
+    <div class="menu-principal" >
+        <h2>Menu Principal</h2>
+        <img src="../layout_04/img/menu.svg" alt="Clique para abrir ou fechar o menu" id="btnMenu">
+    </div>
+
+    <div id="menu" class="menu effect">
+        <nav>
+            <div style="text-align: right;">
+                <button id="btnClose">X</button>
+            </div>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="conteudo">
+        <div class="menu-esquerdo">
+            <h3>COLUNA DE NAVEGAÇÃO</h3>
+        </div>
+        <div class="principal">
+           <h3>COLUNA PRINCIPAL</h3> 
+           <div class="forms">
+               <forms class="formt" action="" method="post">
+               <label for="nome"><span>Nome</span> </label><br>
+               <input class="input_text" type="text" id="nome" name="nome" size="50" placeholder="Insira seu nome completo" required><br>
+               
+               <label for="email">Email:</label><br>
+               <input type="email" id="email"  pattern=".+@globex\.com" size="50"  placeholder="Insira seu endereço de email" required><br>
+       
+               <label for="phone">Telefone:</label><br>
+               <input type="tel" id="phone" name="phone"  pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" size="50"  placeholder="Insira seu numero"required><br>
+   
+               <label for="msg">Mensagem:</label><br>
+               <textarea size="50"  id="msg"></textarea> <br>
+   
+               <input type="checkbox" id="scales" name="scales"
+               checked>
+               <label for="scales">I concordo com os <span class="span">termos e condições</span></span></label><br>
+   
+               <button>
+                   Enviar
+               </button>
+           </forms>
+           </div>
+        </div>
+        <div class="menu-direito">
+            <h3>COLUNA DE APOIO</h3>
+        </div>
+    </section>
+
+    <div class="rodape">
+       <p>RODAPE</p> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
