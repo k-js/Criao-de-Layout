@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Boletim</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>1° Semestre</th>
+                    <th>2° Semestre</th>
+                    <th>Média</th>
+                    <th>Resultado Final</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana da Silva</td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n1"
+                            onchange="calcula_media(0)"></td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n2"
+                            onchange="calcula_media(0)"></td>
+                    <td>
+                        <div name="media"> </div>
+                    </td>
+                    <td>
+                        <div name="resultado">-- </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Beatriz da Silva Leite</td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n1"
+                            onchange="calcula_media(1)"></td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n2"
+                            onchange="calcula_media(1)"></td>
+                    <td>
+                        <div name="media">0,0</div>
+                    </td>
+                    <td>
+                        <div name="resultado"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Breno Silva da Silva</td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n1"
+                            onchange="calcula_media(2)"></td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n2"
+                            onchange="calcula_media(2)"></td>
+                    <td>
+                        <div name="media">0,0</div>
+                    </td>
+                    <td>
+                        <div name="resultado"> </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Carlos da Silva</td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n1"
+                            onchange="calcula_media(3)"></td>
+                    <td><input type="number" value="0" min="0.0" step="0.1" max="10.0" name="n2"
+                            onchange="calcula_media(3)"></td>
+                    <td>
+                        <div name="media">0,0</div>
+                    </td>
+                    <td>
+                        <div name="resultado"> </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
