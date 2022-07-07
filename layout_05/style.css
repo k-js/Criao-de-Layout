@@ -10,10 +10,6 @@
     font-family: 'Rubik', sans-serif
 }
 
-:root {
-    --menu-size: 250px;
-}
-
 .cabecalho{
     height: 100px;
     width: 850px;
@@ -35,79 +31,27 @@
     margin: 0 auto;
 }
 
-.menu-principal h2{
-    padding: 24px;
-    color: #eee;
-}
-
-#btnMenu {
-    cursor: pointer;
-    padding: 5px;
-    transition: all 0.5s;
-}
-
-#btnMenu:hover {
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-#btnMenu:active {
-    background-color: red;
-}
-
-#btnClose {
-    padding: 8px;
-    background-color: rgb(78, 37, 37);
-    color: #fff;
-    font-size: 20px;
-}
-
-#btnClose:active {
-    background-color: rgb(151, 73, 73);
-}
-
-.menu {
-    position: fixed;
-    top: 0;
-    width: var(--menu-size);
-    height: 100%;
-    background-color:rgb(218, 66, 66);;
-}
-
-.menu ul {
+.menu-principal ul {
+    max-width: 800px;
     list-style: none;
-    margin-top: 120px;
-    margin-left: 50px;
+    padding: 0;
 }
 
-.menu ul li {
-    display: block;
+.menu-principal ul li {
+    display: inline;
+    list-style-type: none;
 }
 
-.menu ul li a {
-    transition: background 0.3s;
-    display: block;
-    color: #fff;
-    font-size: 20px;
+.menu-principal ul li a {
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
-    padding: 10px 15px;
-    margin-top: 15px;
+    transition: background .4s;
 }
 
-.menu ul li a:hover {
-    background-color: rgb(139, 145, 179);
-}
-
-.effect {
-    transition: margin 0.4s;
-}
-
-@media (min-width: 768px) {
-    #btnClose {
-        display: none;
-    }
+.menu-principal ul li a:hover {
+    background-color:blue;
 }
 
 .conteudo{
